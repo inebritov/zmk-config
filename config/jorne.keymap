@@ -24,14 +24,14 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | LSHFT|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LCTRL|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
+// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   [   | GUI/] |
+//        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | RALT/'|
+//        | LCTRL|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | CTRL  |
 //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y   &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
-            &kp LSHFT &kp A &kp S &kp D &kp F &kp G &kp H   &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-            &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
+   &kp LGUI &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y   &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RGUI RBKT
+            &kp LALT  &kp A &kp S &kp D &kp F &kp G &kp H   &kp J  &kp K     &kp L   &kp SEMI &mt RALT SQT
+            &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &mt RCTRL BSLH
                 &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET   &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
                         >;
                 };
@@ -40,12 +40,12 @@
 // |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
 //       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  _  |
 //       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  -  |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                         | GUI |     |     |   |     |     | ALT |
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11         &mt RGUI F12
-          &mt LCTRL PLUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
-          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
-                                         &lt ADJ TAB  &trans  &trans   &trans  &trans  &lt ADJ DEL
+   &kp LGUI &kp UNDER       &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11         &mt RGUI F12
+            &mt LSHFT EQUAL &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RALT UNDER
+            &mt LCTRL PLUS  &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &mt RCTRL MINUS
+                                            &lt ADJ TAB  &trans  &trans   &trans  &trans  &lt ADJ DEL
                         >;
                 };
 
