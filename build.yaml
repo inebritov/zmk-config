@@ -14,6 +14,10 @@
 ---
 include:
   - board: nrfmicro_13_52833
+    shield: сorne_left
+  - board: nrfmicro_13_52833
+    shield: сorne_right
+  - board: nrfmicro_13_52833
     shield: jorne_left
   - board: nrfmicro_13_52833
     shield: jorne_right
