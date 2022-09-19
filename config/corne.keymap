@@ -28,13 +28,13 @@
 
         az_gui {
             bindings = <&kp LGUI>;
-            key-positions = <24 25>;
+            key-positions = <25 26>;
             layers = <0 1 2>;
         };
 
         dotcol_rgui {
             bindings = <&kp RGUI>;
-            key-positions = <34 35>;
+            key-positions = <34 33>;
             layers = <0 1 2>;
         };
 
@@ -94,10 +94,10 @@
             //              | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans  &kp F12  &kp F7  &kp F8  &kp F9      &kp GRAVE            &kp N9           &kp N7  &kp N8  &kp N9             &kp N0  &trans
- &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp BACKSLASH  &kp LEFT_BRACKET           &kp N4  &kp N5  &kp N6  &kp RIGHT_BRACKET  &trans
- &trans  &kp F10  &kp F1  &kp F2  &kp F3      &kp MINUS         &kp EQUAL           &kp N1  &kp N2  &kp N3   &kp SINGLE_QUOTE  &trans
-                          &trans  &trans         &trans            &trans  &lt 3 BACKSPACE  &trans
+ &trans  &kp F12  &kp F7  &kp F8  &kp F9      &kp GRAVE  &kp EQUAL           &kp N7  &kp N8  &kp N9   &kp LEFT_BRACKET  &trans
+ &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp BACKSLASH  &kp MINUS           &kp N4  &kp N5  &kp N6  &kp RIGHT_BRACKET  &trans
+ &trans  &kp F10  &kp F1  &kp F2  &kp F3      &kp MINUS     &kp N0           &kp N1  &kp N2  &kp N3   &kp SINGLE_QUOTE  &trans
+                          &trans  &trans         &trans     &trans  &lt 3 BACKSPACE  &trans
             >;
         };
 
