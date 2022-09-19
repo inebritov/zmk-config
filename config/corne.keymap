@@ -6,8 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEF 0
 #define LWR 1
@@ -36,10 +36,10 @@
             //                    | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-         &kp ESC           &kp Q       &kp W        &kp E          &kp R            &kp T           &kp Y            &kp U        &kp I       &kp O               &kp P  &kp LEFT_BRACKET
- &mt LSHIFT CAPS  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D   &mt LSHIFT F            &kp G           &kp H     &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON    &kp APOSTROPHE
- &mt LCTRL GRAVE           &kp Z       &kp X        &kp C          &kp V            &kp B           &kp N            &kp M    &kp COMMA     &kp DOT            &kp FSLH     &kp BACKSLASH
-                                                &lt 1 ESC  &mt LSHFT TAB  &mt LCTRL ENTER  &mt RGUI SPACE  &lt 2 BACKSPACE    &lt 1 DEL
+         &kp ESC   &kp Q   &kp W      &kp E          &kp R            &kp T           &kp Y            &kp U      &kp I    &kp O          &kp P  &kp LEFT_BRACKET
+ &mt LSHIFT CAPS   &kp A   &kp S      &kp D          &kp F            &kp G           &kp H            &kp J      &kp K    &kp L  &kp SEMICOLON    &kp APOSTROPHE
+  &mt LALT GRAVE   &kp Z   &kp X      &kp C          &kp V            &kp B           &kp N            &kp M  &kp COMMA  &kp DOT       &kp FSLH     &kp BACKSLASH
+                                  &lt 1 ESC  &mt LSHFT TAB  &mt LCTRL ENTER  &mt RGUI SPACE  &lt 2 BACKSPACE  &lt 1 DEL
             >;
         };
 
@@ -53,10 +53,10 @@
             //              | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans       &kp F1       &kp F2        &kp F3         &kp F4     &kp F5    &kp MINUS  &kp N7  &kp N8  &kp N9             &kp N0  &trans
- &trans  &mt LGUI F6  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9    &kp F10    &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp LEFT_BRACKET  &trans
- &trans      &kp F11      &kp F12    &kp K_COPY    &kp K_PASTE  &kp GRAVE       &kp N0  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
-                                         &trans         &trans     &trans  &lt 3 SPACE  &trans  &trans
+ &trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp GRAVE    &kp MINUS  &kp N7  &kp N8  &kp N9             &kp N0  &trans
+ &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp LCTRL    &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp LEFT_BRACKET  &trans
+ &trans  &kp F10  &kp F1  &kp F2  &kp F3   &kp LALT       &kp N0  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
+                          &trans  &trans     &trans  &lt 3 SPACE  &trans  &trans
             >;
         };
 
@@ -87,9 +87,9 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
- &reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none   &bootloader  &reset
+ &reset   &bootloader         &none         &none         &none  &out OUT_USB  &out OUT_USB         &none         &none         &none   &bootloader  &reset
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0   &none
-  &none    &bt BT_CLR         &none         &none  &out OUT_USB  &out OUT_BLE  &out OUT_BLE  &out OUT_USB         &none         &none    &bt BT_CLR   &none
+  &none    &bt BT_CLR         &none         &none         &none  &out OUT_BLE  &out OUT_BLE         &none         &none         &none    &bt BT_CLR   &none
                                            &trans         &none        &trans        &trans         &none        &trans
             >;
         };
