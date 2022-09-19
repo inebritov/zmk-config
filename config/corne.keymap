@@ -36,10 +36,10 @@
             //                    | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-        &kp ESC           &kp Q       &kp W        &kp E             &kp R           &kp T        &kp Y           &kp U        &kp I       &kp O               &kp P  &kp LEFT_BRACKET
- &mt LALT GRAVE  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D      &mt LSHIFT F           &kp G        &kp H    &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON    &kp APOSTROPHE
- &mt LSHFT CAPS           &kp Z       &kp X        &kp C             &kp V           &kp B        &kp N           &kp M    &kp COMMA     &kp DOT            &kp FSLH     &kp BACKSLASH
-                                               &lt 2 TAB  &mt LCTRL ESCAPE  &mt LGUI ENTER  &lt 2 SPACE  &mt RSHFT BSPC    &lt 1 DEL
+         &kp ESC           &kp Q       &kp W        &kp E          &kp R            &kp T           &kp Y            &kp U        &kp I       &kp O               &kp P  &kp LEFT_BRACKET
+ &mt LSHIFT CAPS  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D   &mt LSHIFT F            &kp G           &kp H     &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON    &kp APOSTROPHE
+ &mt LCTRL GRAVE           &kp Z       &kp X        &kp C          &kp V            &kp B           &kp N            &kp M    &kp COMMA     &kp DOT            &kp FSLH     &kp BACKSLASH
+                                                &lt 2 ESC  &mt LSHFT TAB  &mt LCTRL ENTER  &mt RGUI SPACE  &lt 2 BACKSPACE    &lt 1 DEL
             >;
         };
 
@@ -53,10 +53,10 @@
             //              | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans   &kp F1     &kp F2      &kp F3       &kp F4   &kp F5  &kp MINUS  &kp N7     &kp N8  &kp N9             &kp N0  &trans
- &trans   &kp F6     &kp F7      &kp F8       &kp F9  &kp F10  &kp EQUAL  &kp N4     &kp N5  &kp N6   &kp LEFT_BRACKET  &trans
- &trans  &kp F11  &sk K_CUT  &sk K_COPY  &kp K_PASTE  &kp F12     &kp N0  &kp N1     &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
-                              &lt 3 TAB       &trans   &trans     &trans  &trans  &lt 3 DEL
+ &trans       &kp F1       &kp F2        &kp F3         &kp F4   &kp F5    &kp MINUS  &kp N7  &kp N8  &kp N9             &kp N0  &trans
+ &trans  &mt LGUI F6  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9  &kp F10    &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp LEFT_BRACKET  &trans
+ &trans      &kp F11    &sk K_CUT    &sk K_COPY    &kp K_PASTE  &kp F12       &kp N0  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
+                                         &trans         &trans   &trans  &lt 3 SPACE  &trans  &trans
             >;
         };
 
@@ -73,7 +73,7 @@
  &trans  &trans  &trans  &trans  &trans     &trans    &kp K_SCROLL_UP        &kp HOME          &kp UP          &kp END        &kp PG_UP  &trans
  &trans  &trans  &trans  &trans  &trans     &trans  &kp K_SCROLL_DOWN        &kp LEFT        &kp DOWN        &kp RIGHT        &kp PG_DN  &trans
  &trans  &trans  &trans  &trans  &trans     &trans           &kp CAPS  &kp SCROLLLOCK  &kp KP_NUMLOCK  &kp PRINTSCREEN  &kp PAUSE_BREAK  &trans
-                         &trans  &trans  &lt 3 RET             &trans          &trans    &lt 3 DELETE
+                         &trans  &trans  &lt 3 RET             &trans          &trans          &trans
             >;
         };
 
